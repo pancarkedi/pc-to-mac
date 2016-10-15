@@ -10,6 +10,7 @@ namespace FirstCoreWeb.Controllers
     {
         public IActionResult Index()
         {
+            var lines = System.IO.File.ReadAllLines("test.txt");
             return View();
         }
 
